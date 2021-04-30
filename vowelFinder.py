@@ -6,4 +6,4 @@ def vowel_indices(word):
             amount_vowels.append(position + 1) # Add 1 to simulate array starting from 1 instead of 0
     return amount_vowels
             
-print(vowel_indices("UNDISARMED"))
+print(vowel_indices("UNDISARMED")) #[1, 4, 6, 9]
