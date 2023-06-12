@@ -1,15 +1,20 @@
-import math 
+def get_perfectsqr(sq):
+    # Return the next square if sq is a square, -1 otherwise
+    # Case -> 121
+    
+    sqr = sq ** 0.5
+    
+    # 121 ^ 1/2 = 11
+    
+    if(sqr.is_integer()):
+        sqr = sqr + 1
+        # (121 ^ (1/2)) + 1 = 12
+        return sqr * sqr
+        # 12 is the next one   
+    return False
 
-def find_next_square(sq):
-    if (math.sqrt(sq).is_integer()):
-         n_sq = math.floor(math.sqrt(sq)) + 1 
-         return n_sq * n_sq 
-    else:
-        return -1
+    
+print(get_perfectsqr(121))
+print(get_perfectsqr(155))
 
-print(find_next_square(121))
-print(find_next_square(625))
-
-print(find_next_square(155))
-print(find_next_square(342786627))
-
+# WITHOUT USING math module !
